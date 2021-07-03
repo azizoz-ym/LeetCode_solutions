@@ -1,0 +1,32 @@
+class Solution(object):
+    def reverse(self, x):
+        
+        #First check if the number is negative
+        z = 0
+        if x < 0:
+            z = -x
+            x = -x
+        
+        #Second, we get the number of digits in x
+        count=0
+        n = x
+        while(n>0):
+            count = count+1
+            n = n // 10
+            
+        #Third, we calculate the reverse of x by using modulus
+        output = 0
+        for i in range(1, count+1):
+            n = x % 10
+            x = x // 10
+            output = output + n * (10**(count-i))
+        if output < -2**31 or output > 2**31 - 1:
+            return 0
+        elif (z != 0) :
+            return -output
+        else:
+            return output            
+            
+            
+       
+        
