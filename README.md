@@ -10,3 +10,7 @@ Day_1 (SAT 03.06.2021):
 3) Reverse Integer 99.85% faster Brute Force (my solution)
 4) Reverse Integer 80% faster int-str-int (learned from discussions)
 5) 
+
+Day_2 (SUN 04.06.2021):
+5) Create Palindrome Number 78% faster O(n) my solution.py
+6)
