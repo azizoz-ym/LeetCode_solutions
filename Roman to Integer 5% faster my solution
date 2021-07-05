@@ -1,0 +1,63 @@
+#My brute force firsrt attempt solution
+class Solution(object):
+    def romanToInt(self, s):
+        s = s + "0"
+        indicator = 0
+        num = 0
+        for i in range (len(s)):
+            print(i)
+            # using indicator variable to skip the next of for loop when needed
+            if indicator == 1:
+                indicator = 0
+                continue
+            
+            #case of I ***********************************************
+            if s[i] == "I":
+                if s[i+1] == "V":
+                    num += 4
+                    indicator = 1
+                elif s[i+1] == "X":
+                    num += 9
+                    indicator = 1
+                else:
+                    num +=1
+            #case of V ***********************************************
+            elif s[i] == "V":
+                num +=5
+            
+            #case of X ***********************************************
+            elif s[i] == "X":
+                if s[i+1] == "L":
+                    num += 40
+                    indicator = 1
+                elif s[i+1] == "C":
+                    num += 90
+                    indicator = 1
+                else:
+                    num +=10
+            #case of L **********************************************
+            elif s[i] == "L":
+                num +=50
+            #case of C **********************************************
+            elif s[i] == "C":
+                if s[i+1] == "D":
+                    num += 400
+                    indicator = 1
+                elif s[i+1] == "M":
+                    num += 900
+                    indicator = 1
+                else:
+                    num +=100                    
+            #case of D *********************************************
+            elif s[i] == "D":
+                num +=500
+            #case of M *********************************************
+            elif s[i] == "M":
+                num +=1000
+                    
+                    
+        return num
+
+            
+            
+        
