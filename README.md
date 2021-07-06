@@ -16,3 +16,5 @@ Day_2 (04.06.2021) SUN
 Day_3 (05.06.2021) MON
 6) Roman to Integer 5% faster my solution.py
 
+Day_4 (06.06.2021) TUE
+7) Valid Parenthesis NOT SOLVED.py
