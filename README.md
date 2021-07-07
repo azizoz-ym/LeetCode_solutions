@@ -18,3 +18,7 @@ Day_3 (05.06.2021) MON
 
 Day_4 (06.06.2021) TUE
 7) Valid Parenthesis NOT SOLVED.py
+
+Day_5 (07.06.2021) WED
+8) Valid Parenthesis 66% faster my solution.py
+
